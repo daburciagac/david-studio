@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>David Studio</title>
+
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- GLOW BACKGROUND -->
+
+  <div class="gradient-blur"></div>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <h2 class="logo">David Studio</h2>
+
+    <ul>
+
+      <li><a href="#home">Home</a></li>
+
+      <li><a href="#services">Services</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="#stats">Stats</a></li>
+
+      <li><a href="#about">About</a></li>
+
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero reveal" id="home">
+
+    <p class="hero-subtitle">
+      CREATIVE WEB DESIGN & DIGITAL EXPERIENCES
+    </p>
+
+    <h1>
+      Building Modern Websites For Businesses & Brands
+    </h1>
+
+    <p class="hero-description">
+      Modern, responsive, and visually engaging websites designed to help businesses grow online and stand out in the digital world.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="https://wa.me/19157024405" target="_blank">
+
+        <button>
+          WhatsApp Me
+        </button>
+
+      </a>
+
+      <a href="mailto:dbc.studio1@gmail.com">
+
+        <button class="secondary-btn">
+          Email Me
+        </button>
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="services reveal" id="services">
+
+    <div class="card">
+
+      <h3>Web Design</h3>
+
+      <p>
+        Modern websites with premium UI and responsive layouts.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Brand Identity</h3>
+
+      <p>
+        Digital experiences focused on branding and visual impact.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>SEO Optimization</h3>
+
+      <p>
+        Helping businesses get discovered online and improve visibility.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section class="projects reveal" id="projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+
+        <div class="project-image"></div>
+
+        <h3>Gym Website</h3>
+
+        <p>
+          High-converting fitness website concept with premium UI.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="project-image"></div>
+
+        <h3>Coffee Brand</h3>
+
+        <p>
+          Modern landing page for a luxury coffee experience.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="project-image"></div>
+
+        <h3>Restaurant UI</h3>
+
+        <p>
+          Elegant restaurant experience with immersive visuals.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STATS -->
+
+  <section class="stats reveal" id="stats">
+
+    <div class="stat-box">
+
+      <h2>5+</h2>
+
+      <p>Projects</p>
+
+    </div>
+
+    <div class="stat-box">
+
+      <h2>100%</h2>
+
+      <p>Responsive</p>
+
+    </div>
+
+    <div class="stat-box">
+
+      <h2>24/7</h2>
+
+      <p>Support</p>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about reveal" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+      I'm an Information Systems and Business Analytics student passionate about creating modern digital experiences through technology, business, and creative design.
+    </p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 David Studio — Modern Digital Experiences
+    </p>
+
+  </footer>
+
+  <!-- SCRIPT -->
+
+  <script>
+
+    const reveals = document.querySelectorAll('.reveal');
+
+    window.addEventListener('scroll', () => {
+
+      reveals.forEach((element) => {
+
+        const windowHeight = window.innerHeight;
+
+        const revealTop = element.getBoundingClientRect().top;
+
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
